@@ -4,7 +4,6 @@ const Genre = require("../models/genre");
 const BookInstance = require("../models/bookinstance");
 
 const async = require("async");
-
 const { body, validationResult } = require("express-validator");
 
 exports.index = (req, res) => {
@@ -197,7 +196,7 @@ exports.book_create_post = [
   },
 ];
 
-// Display Author delete form on GET.
+// Display Book delete form on GET.
 exports.book_delete_get = (req, res, next) => {
   async.parallel(
     {
